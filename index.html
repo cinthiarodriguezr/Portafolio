@@ -189,7 +189,9 @@ section{padding:clamp(72px,10vw,112px) 0;border-bottom:1px solid var(--line)}
 .mapa i{font-style:normal;display:block;font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin-bottom:4px}
 
 /* bots */
-.vid{width:100%;max-width:360px;height:auto;border-radius:14px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45);background:#F6F1EA}
+.vwrap{display:flex;flex-direction:column;align-items:center;gap:10px;width:100%}
+.vnote{font-size:.8rem;font-weight:700;color:var(--muted)}
+.vid{width:100%;max-width:380px;height:auto;border-radius:14px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45);background:#F6F1EA}
 .bots svg{width:100%;max-width:480px;height:auto;font-family:var(--body)}
 .bots .bx{fill:var(--surface);stroke:var(--slate);stroke-width:1.3}
 .bots .bx-me{fill:color-mix(in srgb,var(--gold) 22%,var(--surface));stroke:var(--accent);stroke-width:2}
@@ -469,15 +471,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <!-- 3 Bots -->
     <article class="project" id="p-bots">
       <div class="visual bots">
-        <video class="vid" src="equipo-carrera-grokbot.mp4" poster="equipo-carrera-grokbot.jpg" autoplay muted loop playsinline controls preload="metadata" width="720" height="900" aria-label="Vídeo: mi equipo de carrera en Grok Bot, una coordinadora y cinco bots especialistas"></video>
+        <div class="vwrap"><video class="vid" src="equipo-ia-grokbot.mp4" poster="equipo-ia-grokbot.jpg" autoplay muted loop playsinline controls preload="metadata" width="720" height="900" aria-label="Vídeo: así pongo a trabajar a mi equipo de agentes de IA en Grok Bot, con grabaciones reales"></video><span class="vnote">🔊 Activa el sonido · 45 s</span></div>
       </div>
       <div class="body">
         <span class="num">03</span>
         <h3>🤖 Mi equipo de bots con IA</h3>
         <div class="steps">
           <div><span class="k">Reto</span><span>Sostener mi cambio de carrera y mi contenido con poco tiempo entre turnos, estudios y familia.</span></div>
-          <div><span class="k">Qué hice</span><span>Diseñé en Grok un equipo de asistentes: una coordinadora que reparte el trabajo y especialistas con instrucciones, reglas y límites claros.</span></div>
-          <div><span class="k">Resultado</span><span>Un flujo de trabajo documentado. Los bots preparan y yo reviso, decido y publico. Lo convertí en un vídeo para el reto de JobCamp.</span></div>
+          <div><span class="k">Qué hice</span><span>Diseñé en Grok Bot un equipo de agentes: Diosa lo coordina todo, PersIA lleva mi vida personal y Rumbo mi carrera, cada uno con instrucciones, reglas y límites claros.</span></div>
+          <div><span class="k">Resultado</span><span>En el vídeo se ve mi Grok Bot real: cómo doy instrucciones a cada agente y cómo trabajan. Los bots preparan y yo reviso, decido y publico.</span></div>
         </div>
         <div class="chips"><span class="chip">Grok</span><span class="chip">Claude</span><span class="chip">Redacción de instrucciones</span><span class="chip">Procesos</span></div>
         <p class="proves"><b>Demuestra:</b> delegar con instrucciones precisas, fijar controles de calidad y documentar un proceso.</p>
