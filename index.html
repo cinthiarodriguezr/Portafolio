@@ -139,7 +139,7 @@ section{padding:clamp(72px,10vw,112px) 0;border-bottom:1px solid var(--line)}
 
 /* SKILLS */
 .skill{display:flex;flex-direction:column;gap:10px}
-.skill .ic{width:44px;height:44px;border-radius:12px;background:var(--surface-2);display:grid;place-items:center;color:var(--accent)}
+.skill .ic{width:48px;height:48px;border-radius:12px;background:var(--surface-2);display:grid;place-items:center;font-size:1.5rem;line-height:1}
 .skill p{margin:0;color:var(--muted);font-size:.95rem}
 .skill a{margin-top:auto;font-weight:700;font-size:.9rem;text-decoration:none}
 .skill a:hover{text-decoration:underline}
@@ -189,6 +189,7 @@ section{padding:clamp(72px,10vw,112px) 0;border-bottom:1px solid var(--line)}
 .mapa i{font-style:normal;display:block;font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin-bottom:4px}
 
 /* bots */
+.vid{width:100%;max-width:360px;height:auto;border-radius:14px;box-shadow:0 18px 40px -18px rgba(0,0,0,.45);background:#F6F1EA}
 .bots svg{width:100%;max-width:480px;height:auto;font-family:var(--body)}
 .bots .bx{fill:var(--surface);stroke:var(--slate);stroke-width:1.3}
 .bots .bx-me{fill:color-mix(in srgb,var(--gold) 22%,var(--surface));stroke:var(--accent);stroke-width:2}
@@ -305,7 +306,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <section id="hilo">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Mi hilo</span>
+      <span class="eyebrow">🧵 Mi hilo</span>
       <h2>Tres piezas, <em>un mismo hilo</em></h2>
       <p class="lead">He trabajado en dos países y en sectores muy distintos. Lo que une cada etapa es lo mismo: que la información esté en su sitio y que el trabajo fluya.</p>
     </div>
@@ -360,43 +361,43 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <section id="habilidades">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Habilidades</span>
+      <span class="eyebrow">🛠️ Habilidades</span>
       <h2>Lo que sé hacer, <em>con pruebas</em></h2>
       <p class="lead">Cada habilidad enlaza con un proyecto de este portafolio donde puedes verla en acción.</p>
     </div>
     <div class="grid g3">
       <article class="card skill">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></span>
+        <span class="ic" aria-hidden="true">🗂️</span>
         <h3>Gestión documental</h3>
         <p>Valido, registro y archivo para que todo sea trazable y se encuentre a la primera.</p>
         <a href="#p-mapa">Ver en el mapa profesional →</a>
       </article>
       <article class="card skill">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></span>
+        <span class="ic" aria-hidden="true">📊</span>
         <h3>Datos y visualización</h3>
         <p>Convierto información dispersa en tablas y gráficos que se entienden de un vistazo.</p>
         <a href="#p-dashboard">Ver el dashboard →</a>
       </article>
       <article class="card skill">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+        <span class="ic" aria-hidden="true">💶</span>
         <h3>Control de gastos y presupuestos</h3>
         <p>Previsto, pagado y pendiente, con alertas antes de que algo se desvíe.</p>
         <a href="#p-gastos">Ver el tablero de gastos →</a>
       </article>
       <article class="card skill">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v4M12 11.5l-6 5M12 11.5l6 5"/></svg></span>
+        <span class="ic" aria-hidden="true">🤝</span>
         <h3>Coordinación de procesos</h3>
         <p>Reparto tareas, fijo responsables y hago que la información llegue a quien la necesita.</p>
         <a href="#p-bots">Ver mi equipo de bots →</a>
       </article>
       <article class="card skill">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3l2.2 5.3L20 9l-4.4 3.8L17 18.5 12 15.6 7 18.5l1.4-5.7L4 9l5.8-.7z"/></svg></span>
+        <span class="ic" aria-hidden="true">🤖</span>
         <h3>IA aplicada al trabajo</h3>
         <p>Uso ChatGPT, Claude, Gemini y Grok para preparar borradores, ordenar datos y automatizar tareas, y reviso cada resultado.</p>
         <a href="#p-bots">Ver cómo la uso →</a>
       </article>
       <article class="card skill">
-        <span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg></span>
+        <span class="ic" aria-hidden="true">✍️</span>
         <h3>Comunicación y marca</h3>
         <p>Textos claros y materiales con una imagen coherente, del correo al documento.</p>
         <a href="#p-brand">Ver mi brand book →</a>
@@ -409,7 +410,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <section id="portafolio">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Portafolio</span>
+      <span class="eyebrow">💼 Portafolio</span>
       <h2>Proyectos <em>hechos con IA</em></h2>
       <p class="lead">Todos los he creado yo, con ayuda de la IA y revisando cada dato. Cada uno resuelve un problema real.</p>
     </div>
@@ -430,7 +431,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       </div>
       <div class="body">
         <span class="num">01</span>
-        <h3>Dashboard profesional interactivo</h3>
+        <h3>📊 Dashboard profesional interactivo</h3>
         <div class="steps">
           <div><span class="k">Reto</span><span>Un CV en PDF no muestra bien una trayectoria larga en dos países.</span></div>
           <div><span class="k">Qué hice</span><span>Lo convertí en una página con línea de tiempo, gráficos de competencias y mis logros, trabajando con Claude.</span></div>
@@ -454,7 +455,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       </div>
       <div class="body">
         <span class="num">02</span>
-        <h3>Mi mapa profesional</h3>
+        <h3>🧭 Mi mapa profesional</h3>
         <div class="steps">
           <div><span class="k">Reto</span><span>Explicar quién soy profesionalmente en menos de un minuto.</span></div>
           <div><span class="k">Qué hice</span><span>En el programa JOBCAMP ordené mi perfil en cuatro claves, lo respaldé con casos reales y lo convertí en una infografía. La versión actual es de noviembre de 2026.</span></div>
@@ -468,25 +469,15 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <!-- 3 Bots -->
     <article class="project" id="p-bots">
       <div class="visual bots">
-        <svg viewBox="0 0 480 300" role="img" aria-label="Una coordinadora reparte el trabajo a cuatro bots especialistas y yo reviso antes de publicar">
-          <path class="ln" d="M240 78V112M70 112H410M70 112V142M180 112V142M300 112V142M410 112V142M70 196V230H240M180 196V230M300 196V230M410 196V230H240M240 230V244"/>
-          <rect class="bx" x="140" y="24" width="200" height="54" rx="10"/>
-          <text class="t" x="240" y="48" text-anchor="middle">Coordinadora</text>
-          <text class="s" x="240" y="66" text-anchor="middle">estrategia, calendario y calidad</text>
-          <rect class="bx" x="20" y="142" width="100" height="54" rx="10"/><text class="t" x="70" y="166" text-anchor="middle">Expediente</text><text class="s" x="70" y="183" text-anchor="middle">valida datos</text>
-          <rect class="bx" x="130" y="142" width="100" height="54" rx="10"/><text class="t" x="180" y="166" text-anchor="middle">Ideas</text><text class="s" x="180" y="183" text-anchor="middle">noticias y métricas</text>
-          <rect class="bx" x="250" y="142" width="100" height="54" rx="10"/><text class="t" x="300" y="166" text-anchor="middle">Redacción</text><text class="s" x="300" y="183" text-anchor="middle">textos con mi voz</text>
-          <rect class="bx" x="360" y="142" width="100" height="54" rx="10"/><text class="t" x="410" y="166" text-anchor="middle">Diseño</text><text class="s" x="410" y="183" text-anchor="middle">carruseles y web</text>
-          <rect class="bx-me" x="170" y="244" width="140" height="44" rx="10"/><text class="t" x="240" y="264" text-anchor="middle">Yo</text><text class="s" x="240" y="279" text-anchor="middle">reviso y decido</text>
-        </svg>
+        <video class="vid" src="equipo-carrera-grokbot.mp4" poster="equipo-carrera-grokbot.jpg" autoplay muted loop playsinline controls preload="metadata" width="720" height="900" aria-label="Vídeo: mi equipo de carrera en Grok Bot, una coordinadora y cinco bots especialistas"></video>
       </div>
       <div class="body">
         <span class="num">03</span>
-        <h3>Mi equipo de bots con IA</h3>
+        <h3>🤖 Mi equipo de bots con IA</h3>
         <div class="steps">
           <div><span class="k">Reto</span><span>Sostener mi cambio de carrera y mi contenido con poco tiempo entre turnos, estudios y familia.</span></div>
           <div><span class="k">Qué hice</span><span>Diseñé en Grok un equipo de asistentes: una coordinadora que reparte el trabajo y especialistas con instrucciones, reglas y límites claros.</span></div>
-          <div><span class="k">Resultado</span><span>Un flujo de trabajo documentado. Los bots preparan y yo reviso, decido y publico.</span></div>
+          <div><span class="k">Resultado</span><span>Un flujo de trabajo documentado. Los bots preparan y yo reviso, decido y publico. Lo convertí en un vídeo para el reto de JobCamp.</span></div>
         </div>
         <div class="chips"><span class="chip">Grok</span><span class="chip">Claude</span><span class="chip">Redacción de instrucciones</span><span class="chip">Procesos</span></div>
         <p class="proves"><b>Demuestra:</b> delegar con instrucciones precisas, fijar controles de calidad y documentar un proceso.</p>
@@ -513,7 +504,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       </div>
       <div class="body">
         <span class="num">04</span>
-        <h3>Tablero de control de gastos</h3>
+        <h3>💶 Tablero de control de gastos</h3>
         <div class="steps">
           <div><span class="k">Reto</span><span>Saber cada mes cuánto queda por pagar, cuándo vence cada pago y si el dinero alcanza.</span></div>
           <div><span class="k">Qué hice</span><span>Diseñé con IA un tablero con gastos previstos y pagados, categorías, calendario de vencimientos y saldo previsto.</span></div>
@@ -534,7 +525,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       </div>
       <div class="body">
         <span class="num">05</span>
-        <h3>Brand book de mi marca personal</h3>
+        <h3>🎨 Brand book de mi marca personal</h3>
         <div class="steps">
           <div><span class="k">Reto</span><span>Que mi CV, mi LinkedIn y mi web se vieran y sonaran como una sola persona.</span></div>
           <div><span class="k">Qué hice</span><span>Definí con IA mi tono, mi paleta (sacada de mi propia foto), mis tipografías y reglas de uso, y lo documenté en un manual de 18 páginas.</span></div>
@@ -561,7 +552,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       </div>
       <div class="body">
         <span class="num">06</span>
-        <h3>Estrategia de contenido en LinkedIn</h3>
+        <h3>💬 Estrategia de contenido en LinkedIn</h3>
         <div class="steps">
           <div><span class="k">Reto</span><span>Demostrar en público que uso la IA de verdad, no solo decirlo en el CV.</span></div>
           <div><span class="k">Qué hice</span><span>Planifiqué con IA mi perfil, mis secciones destacadas y una serie semanal de publicaciones, con un ritmo que puedo mantener.</span></div>
@@ -579,14 +570,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <section id="aprendiendo">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Aprendiendo en público</span>
+      <span class="eyebrow">📚 Aprendiendo en público</span>
       <h2>Lo que voy contando <em>en LinkedIn</em></h2>
       <p class="lead">Comparto lo que aprendo con la IA aplicada a la administración. Sin tecnicismos y con casos reales.</p>
     </div>
     <div class="pillars">
-      <div class="pillar"><b>1</b><h3>Orden que ahorra tiempo</h3><p>Gestión documental y pequeños sistemas que evitan buscar, repetir y corregir.</p></div>
-      <div class="pillar"><b>2</b><h3>IA práctica</h3><p>Cómo uso la IA en tareas administrativas reales, con lo que funciona y lo que no.</p></div>
-      <div class="pillar"><b>3</b><h3>Paso a paso</h3><p>Lo que aprendo por el camino, mientras estudio, trabajo y concilio.</p></div>
+      <div class="pillar"><b>1</b><h3>🗂️ Orden que ahorra tiempo</h3><p>Gestión documental y pequeños sistemas que evitan buscar, repetir y corregir.</p></div>
+      <div class="pillar"><b>2</b><h3>🤖 IA práctica</h3><p>Cómo uso la IA en tareas administrativas reales, con lo que funciona y lo que no.</p></div>
+      <div class="pillar"><b>3</b><h3>👣 Paso a paso</h3><p>Lo que aprendo por el camino, mientras estudio, trabajo y concilio.</p></div>
     </div>
     <div class="post">
       <span class="badge">Primer post</span>
@@ -600,7 +591,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <section id="formacion">
   <div class="wrap">
     <div class="sec-head">
-      <span class="eyebrow">Formación</span>
+      <span class="eyebrow">🎓 Formación</span>
       <h2>Base sólida, <em>formación en marcha</em></h2>
     </div>
     <div class="edu">
@@ -632,7 +623,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
 <!-- CONTACTO -->
 <section id="contacto" class="contact">
   <div class="wrap">
-    <span class="eyebrow">Contacto</span>
+    <span class="eyebrow">✉️ Contacto</span>
     <h2>¿Buscas a alguien que ponga orden <em>en documentos, datos y procesos?</em></h2>
     <p>Escríbeme y te respondo personalmente.</p>
     <div class="ctas">
