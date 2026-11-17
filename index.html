@@ -80,7 +80,10 @@ p{margin:0 0 1rem}
 .hero::after{content:"";position:absolute;right:-180px;top:50%;width:620px;height:620px;transform:translateY(-50%);border:1px solid rgba(214,182,122,.25);border-radius:50%;pointer-events:none}
 .hero .wrap{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:center;padding-top:88px;padding-bottom:96px;position:relative;z-index:1}
 .hero .eyebrow{color:var(--hero-gold)}
-.hero h1{color:var(--hero-ink);font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:1.2rem}
+.hero h1{color:var(--hero-ink);font-size:clamp(1.7rem,3.9vw,3.4rem);line-height:1.15;margin-bottom:1.2rem}
+.hero h1 .l{display:block;white-space:nowrap}
+@media (max-width:860px){.hero h1{font-size:clamp(1.7rem,5.5vw,3rem)}}
+@media (max-width:340px){.hero h1 .l{white-space:normal}}
 .hero h1 em{color:var(--hero-accent)}
 .hero .lead{color:var(--hero-muted)}
 .role{display:inline-flex;flex-wrap:wrap;gap:8px;margin:0 0 1.6rem}
@@ -284,7 +287,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   <div class="wrap">
     <div>
       <span class="eyebrow">Asistente administrativa · Gestión documental y soporte digital</span>
-      <h1>Orden que se nota. <em>Tiempo que se recupera.</em></h1>
+      <h1><span class="l">Orden que se nota.</span> <em class="l">Tiempo que se recupera.</em></h1>
       <div class="role"><span>Gestión documental</span><span>Soporte digital</span><span>Excel avanzado</span><span>Herramientas digitales e IA</span></div>
       <p class="lead">Llevo más de 15 años poniendo orden en proyectos, documentos y datos. Ahora le sumo la IA: preparo lo pesado con ella y dedico mi tiempo a lo que importa, revisar y decidir.</p>
       <div class="ctas">
