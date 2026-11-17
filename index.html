@@ -223,28 +223,30 @@ section{padding:clamp(72px,10vw,112px) 0;border-bottom:1px solid var(--line)}
 .li .hash{color:var(--slate);font-weight:700;font-size:.78rem}
 
 
-/* EXCEL */
-.xl{display:flex;flex-direction:column;gap:14px}
-.xl-top{display:flex;gap:14px;align-items:flex-start}
-.xl-top h3{font-size:1.3rem;margin-bottom:4px}
-.xl-top p{margin:0;font-size:.92rem}
-.xl-ic{font-size:1.6rem;width:48px;height:48px;flex:none;border-radius:12px;background:var(--surface-2);display:grid;place-items:center}
-.xch{width:100%;height:auto;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:8px}
-.xch .ax{font:600 10px var(--body);fill:var(--muted)}
-.xch .vl{font:700 11px var(--body);fill:var(--heading)}
-.xch .axl{stroke:var(--line);stroke-width:1.5}
-.lg{display:flex;flex-wrap:wrap;gap:14px;font-size:.8rem;color:var(--muted);margin-top:-6px}
-.lg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px}
-.xl-list{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:.94rem}
-.xl-list li{padding-left:20px;position:relative}
-.xl-list li::before{content:"";position:absolute;left:0;top:.6em;width:10px;height:2px;background:var(--gold)}
-.xl .chips{margin:0}
-.ai-band{margin-top:28px;background:var(--hero-bg);color:var(--hero-ink);border-radius:22px;padding:clamp(24px,4vw,40px);display:grid;grid-template-columns:1fr 1.4fr;gap:28px;align-items:center}
-.ai-band h3{color:var(--hero-ink);font-size:clamp(1.4rem,2.6vw,1.9rem);margin-top:10px}
-.ai-band .eyebrow{color:var(--hero-gold)}
-.ai-band ol{margin:0;padding-left:20px;display:grid;gap:10px;color:var(--hero-muted)}
-.ai-band b{color:var(--hero-ink)}
-@media (max-width:760px){.ai-band{grid-template-columns:1fr}}
+/* EXCEL + IA */
+.project.wide{grid-template-columns:minmax(0,1fr)}.project.wide>*,.xcols>*{min-width:0}
+.project.wide .visual{order:0!important;flex-direction:column;padding:clamp(16px,3vw,32px);min-height:0}
+.xwin{width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 22px 50px -24px rgba(0,0,0,.4)}
+.xbar{display:flex;align-items:center;gap:10px;background:#1D6F42;color:#fff;padding:8px 14px;font-size:.82rem}
+.xlogo{font:700 .8rem var(--body);background:#fff;color:#1D6F42;width:22px;height:22px;border-radius:4px;display:grid;place-items:center}
+.xfile{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xdots{display:flex;gap:6px}.xdots i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.55)}
+.xbody{background:#fff;height:clamp(240px,34vw,400px);overflow:auto;position:relative}
+.xp{display:none;height:100%}.xp.on{display:block}
+.xp a{display:block;cursor:zoom-in}
+.xp img{display:block;width:100%;min-width:620px;height:auto}
+.xp-g{background:var(--surface-2);display:none;place-items:center;padding:24px}.xp-g.on{display:grid}
+.xtabs{display:flex;overflow-x:auto;background:#F3F3F3;border-top:1px solid #DADADA;scrollbar-width:thin}
+.xt{flex:none;border:0;border-right:1px solid #DADADA;background:transparent;font:600 .8rem var(--body);color:#444;padding:9px 14px;cursor:pointer;white-space:nowrap}
+.xt.on{background:#fff;color:#1D6F42;box-shadow:inset 0 -3px 0 #1D6F42}
+.xt:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.xhint{margin:12px 0 0;font-size:.82rem;color:var(--muted)}
+.xcols{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;margin-bottom:1.2rem}
+.xcols .steps{margin:0;align-content:start}
+.xworks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.xworks li{background:var(--surface-2);border-radius:12px;padding:10px 14px;font-size:.9rem;color:var(--muted)}
+.xworks b{display:block;color:var(--heading);font-size:.95rem;margin-bottom:2px}
+@media (max-width:860px){.xcols{grid-template-columns:1fr}}
 /* LEARNING */
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pillar{border-top:3px solid var(--gold);padding-top:18px}
@@ -301,7 +303,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       Cinthia Rodríguez
     </a>
     <div class="links">
-      <a href="#hilo">Mi hilo</a><a href="#habilidades">Habilidades</a><a href="#portafolio">Portafolio</a><a href="#excel">Excel</a><a href="#aprendiendo">Aprendiendo</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a>
+      <a href="#hilo">Mi hilo</a><a href="#habilidades">Habilidades</a><a href="#portafolio">Portafolio</a><a href="#aprendiendo">Aprendiendo</a><a href="#formacion">Formación</a><a href="#contacto">Contacto</a>
     </div>
     <button class="theme" id="theme" type="button" aria-label="Cambiar a modo oscuro">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -407,7 +409,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <span class="ic" aria-hidden="true">💶</span>
         <h3>Control de gastos y presupuestos</h3>
         <p>Previsto, pagado y pendiente, con alertas antes de que algo se desvíe.</p>
-        <a href="#p-gastos">Ver el tablero de gastos →</a>
+        <a href="#p-excel">Ver mis trabajos en Excel →</a>
       </article>
       <article class="card skill">
         <span class="ic" aria-hidden="true">🤝</span>
@@ -509,11 +511,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
       </div>
     </article>
 
-    <!-- 4 Gastos -->
-    <article class="project" id="p-gastos">
+    <!-- 4 Excel + IA -->
+    <article class="project wide" id="p-excel">
       <div class="visual">
-        <span class="tag-demo">Datos de ejemplo</span>
-        <div class="gastos" aria-hidden="true">
+        <div class="xwin">
+          <div class="xbar"><span class="xlogo">X</span><span class="xfile" id="xfile">Balanza_Verde_Plan_Financiero.xlsx</span><span class="xdots"><i></i><i></i><i></i></span></div>
+          <div class="xbody"><div class="xp on" data-k="tes"><a href="excel-tesoreria-balanza.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-tesoreria-balanza.jpg" alt="Plan de tesorería a 12 meses de la empresa simulada Balanza Verde" loading="lazy"></a></div><div class="xp" data-k="rat"><a href="excel-ratios-balanza.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-ratios-balanza.jpg" alt="Análisis con fondo de maniobra y ratios financieros y de rentabilidad" loading="lazy"></a></div><div class="xp" data-k="pre"><a href="excel-presupuesto.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-presupuesto.jpg" alt="Presupuesto de tesorería de cuatro meses con nivel de seguridad" loading="lazy"></a></div><div class="xp" data-k="van"><a href="excel-van-tir.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-van-tir.jpg" alt="Comparación de dos proyectos de inversión con VAN y TIR" loading="lazy"></a></div><div class="xp" data-k="neg"><a href="excel-plan-negocio.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-plan-negocio.jpg" alt="Plan de tesorería del plan de negocio de clases y campus de verano" loading="lazy"></a></div><div class="xp xp-g" data-k="gas"><span class="tag-demo">Datos de ejemplo</span><div class="gastos" >
           <div class="row1">
             <svg width="76" height="76" viewBox="0 0 76 76"><circle cx="38" cy="38" r="30" fill="none" stroke="var(--surface-2)" stroke-width="9"/><circle cx="38" cy="38" r="30" fill="none" stroke="#2E6B4E" stroke-width="9" stroke-linecap="round" stroke-dasharray="122 189" transform="rotate(-90 38 38)"/><text x="38" y="43" text-anchor="middle" font-family="Playfair Display,serif" font-weight="700" font-size="15" fill="var(--heading)">65%</text></svg>
             <div><small>Pagado este mes</small><b>1.040 €</b><small>de 1.600 € previstos</small></div>
@@ -525,18 +528,30 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
             <li><span>Suministros · día 10</span><span class="ok">Pagado</span></li>
             <li><span>Seguro · día 20</span><span>Pendiente · 85 €</span></li>
           </ul>
+        </div></div></div>
+          <div class="xtabs" role="group" aria-label="Elige una hoja"><button type="button" class="xt on" data-k="tes" data-f="Balanza_Verde_Plan_Financiero.xlsx" aria-pressed="true">Tesorería · Balanza Verde</button><button type="button" class="xt" data-k="rat" data-f="Balanza_Verde_Plan_Financiero.xlsx" aria-pressed="false">Ratios</button><button type="button" class="xt" data-k="pre" data-f="Presupuesto_tesoreria.xls" aria-pressed="false">Presupuesto</button><button type="button" class="xt" data-k="van" data-f="Evaluacion_inversiones.xls" aria-pressed="false">VAN y TIR</button><button type="button" class="xt" data-k="neg" data-f="Plan_de_negocio.xlsx" aria-pressed="false">Plan de negocio</button><button type="button" class="xt" data-k="gas" data-f="Tablero_de_gastos" aria-pressed="false">Control de gastos</button></div>
         </div>
+        <p class="xhint">👆 Cambia de pestaña y toca la hoja para abrirla en grande.</p>
       </div>
       <div class="body">
         <span class="num">04</span>
-        <h3>💶 Tablero de control de gastos</h3>
-        <div class="steps">
-          <div><span class="k">Reto</span><span>Saber cada mes cuánto queda por pagar, cuándo vence cada pago y si el dinero alcanza.</span></div>
-          <div><span class="k">Qué hice</span><span>Diseñé con IA un tablero con gastos previstos y pagados, categorías, calendario de vencimientos y saldo previsto.</span></div>
-          <div><span class="k">Resultado</span><span>Lo uso cada mes: de un vistazo veo lo pendiente y me anticipo a las desviaciones.</span></div>
+        <h3>📊 Excel con IA: del dato a la decisión</h3>
+        <div class="xcols">
+          <div class="steps">
+            <div><span class="k">Reto</span><span>Pasar de una pila de cifras a hojas que respondan preguntas: ¿llega el dinero?, ¿qué proyecto conviene?, ¿qué queda por pagar?</span></div>
+            <div><span class="k">Qué hice</span><span>Construí en Excel planes de tesorería, presupuestos, análisis de inversiones y un tablero de gastos, con fórmulas enlazadas que se actualizan solas.</span></div>
+            <div><span class="k">Con la IA</span><span>Me ayudó a montar la estructura, revisar fórmulas y detectar lo que no cuadraba. Yo construyo, la IA revisa y yo decido.</span></div>
+          </div>
+          <ul class="xworks">
+            <li><b>🌱 Plan económico-financiero</b>9 hojas enlazadas, más de 300 fórmulas y ratios automáticos.</li>
+            <li><b>💧 Presupuesto de tesorería</b>Cobros y pagos por plazos, con un nivel de seguridad de caja.</li>
+            <li><b>⚖️ Evaluación de inversiones</b>VAN y TIR para elegir el proyecto que crea valor.</li>
+            <li><b>🎓 Plan de negocio</b>Clases y campus de verano, hecho de principio a fin con IA.</li>
+            <li><b>💶 Control de gastos</b>Previsto, pagado y pendiente, con calendario de vencimientos.</li>
+          </ul>
         </div>
-        <div class="chips"><span class="chip">Claude</span><span class="chip">Control presupuestario</span><span class="chip">Calendario de pagos</span></div>
-        <p class="proves"><b>Demuestra:</b> seguimiento de pagos y control de presupuestos, la misma lógica que en un departamento administrativo.</p>
+        <div class="chips"><span class="chip">Excel avanzado</span><span class="chip">Fórmulas enlazadas</span><span class="chip">SI.ERROR</span><span class="chip">VNA · TIR</span><span class="chip">Claude</span></div>
+        <p class="proves"><b>Demuestra:</b> planificar, controlar presupuestos y presentar números que se entienden, la base del trabajo administrativo. <span class="muted">Empresas y datos ficticios de mis trabajos de clase.</span></p>
       </div>
     </article>
 
@@ -591,55 +606,6 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
   </div>
 </section>
 
-
-<!-- EXCEL -->
-<section id="excel">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">📊 Excel + IA</span>
-      <h2>Lo que hago <em>en Excel</em></h2>
-      <p class="lead">Cuatro trabajos de mi Grado en Administración y Finanzas: planificación, tesorería e inversiones. Los construyo yo y uso la IA para revisarlos, como haría una compañera exigente.</p>
-    </div>
-    <div class="grid g2 xls">
-      <article class="card xl">
-        <div class="xl-top"><span class="xl-ic">🌱</span><div><h3>Plan económico-financiero completo</h3><p class="muted">Empresa simulada: «Balanza Verde», consultoría de eventos sostenibles.</p></div></div>
-        <svg viewBox="0 0 300 150" class="xch" role="img" aria-label="Previsión mensual de ingresos y gastos del año 1"><line x1="10" y1="125" x2="292" y2="125" class="axl"/><rect x="14.0" y="125.0" width="9" height="0.0" rx="2" fill="var(--slate)"/><rect x="24.0" y="90.2" width="9" height="34.8" rx="2" fill="var(--accent)"/><text x="23.0" y="140" text-anchor="middle" class="ax">E</text><rect x="37.5" y="108.5" width="9" height="16.5" rx="2" fill="var(--slate)"/><rect x="47.5" y="97.8" width="9" height="27.2" rx="2" fill="var(--accent)"/><text x="46.5" y="140" text-anchor="middle" class="ax">F</text><rect x="61.0" y="81.0" width="9" height="44.0" rx="2" fill="var(--slate)"/><rect x="71.0" y="91.6" width="9" height="33.4" rx="2" fill="var(--accent)"/><text x="70.0" y="140" text-anchor="middle" class="ax">M</text><rect x="84.5" y="37.0" width="9" height="88.0" rx="2" fill="var(--slate)"/><rect x="94.5" y="81.7" width="9" height="43.3" rx="2" fill="var(--accent)"/><text x="93.5" y="140" text-anchor="middle" class="ax">A</text><rect x="108.0" y="20.5" width="9" height="104.5" rx="2" fill="var(--slate)"/><rect x="118.0" y="77.6" width="9" height="47.4" rx="2" fill="var(--accent)"/><text x="117.0" y="140" text-anchor="middle" class="ax">M</text><rect x="131.5" y="20.5" width="9" height="104.5" rx="2" fill="var(--slate)"/><rect x="141.5" y="77.6" width="9" height="47.4" rx="2" fill="var(--accent)"/><text x="140.5" y="140" text-anchor="middle" class="ax">J</text><rect x="155.0" y="81.0" width="9" height="44.0" rx="2" fill="var(--slate)"/><rect x="165.0" y="94.6" width="9" height="30.4" rx="2" fill="var(--accent)"/><text x="164.0" y="140" text-anchor="middle" class="ax">J</text><rect x="178.5" y="125.0" width="9" height="0.0" rx="2" fill="var(--slate)"/><rect x="188.5" y="105.6" width="9" height="19.4" rx="2" fill="var(--accent)"/><text x="187.5" y="140" text-anchor="middle" class="ax">A</text><rect x="202.0" y="20.5" width="9" height="104.5" rx="2" fill="var(--slate)"/><rect x="212.0" y="75.8" width="9" height="49.2" rx="2" fill="var(--accent)"/><text x="211.0" y="140" text-anchor="middle" class="ax">S</text><rect x="225.5" y="20.5" width="9" height="104.5" rx="2" fill="var(--slate)"/><rect x="235.5" y="77.6" width="9" height="47.4" rx="2" fill="var(--accent)"/><text x="234.5" y="140" text-anchor="middle" class="ax">O</text><rect x="249.0" y="20.5" width="9" height="104.5" rx="2" fill="var(--slate)"/><rect x="259.0" y="77.6" width="9" height="47.4" rx="2" fill="var(--accent)"/><text x="258.0" y="140" text-anchor="middle" class="ax">N</text><rect x="272.5" y="64.5" width="9" height="60.5" rx="2" fill="var(--slate)"/><rect x="282.5" y="90.5" width="9" height="34.5" rx="2" fill="var(--accent)"/><text x="281.5" y="140" text-anchor="middle" class="ax">D</text></svg><div class="lg"><span><i style="background:var(--slate)"></i>Ingresos</span><span><i style="background:var(--accent)"></i>Gastos</span></div>
-        <ul class="xl-list"><li><b>9 hojas enlazadas:</b> inversión inicial, ingresos, gastos, tesorería, resultados y análisis.</li><li><b>Más de 300 fórmulas</b>: si cambio un precio, se actualiza todo el plan.</li><li><b>Ratios automáticos:</b> liquidez, solvencia, endeudamiento, rentabilidad y punto de equilibrio.</li><li><b>Con ayuda de la IA:</b> la usé para montar la estructura de hojas y revisar que las fórmulas enlazaran bien.</li></ul>
-        <div class="chips"><span class="chip">SUMA</span><span class="chip">SI</span><span class="chip">SI.ERROR</span><span class="chip">Referencias entre hojas</span></div>
-      </article>
-      <article class="card xl">
-        <div class="xl-top"><span class="xl-ic">💧</span><div><h3>Presupuesto de tesorería</h3><p class="muted">Cuatro meses de cobros y pagos de una empresa, con cobros a 60 días y pagos a 30.</p></div></div>
-        <svg viewBox="0 0 300 150" class="xch" role="img" aria-label="Saldo de tesorería frente al nivel de seguridad de 1.500 euros"><line x1="20" y1="125" x2="290" y2="125" class="axl"/><rect x="40" y="92.7" width="34" height="32.3" rx="3" fill="var(--slate)"/><text x="57" y="86.7" text-anchor="middle" class="vl">1.845</text><text x="57" y="140" text-anchor="middle" class="ax">Ene</text><rect x="102" y="28.4" width="34" height="96.6" rx="3" fill="var(--slate)"/><text x="119" y="22.4" text-anchor="middle" class="vl">5.520</text><text x="119" y="140" text-anchor="middle" class="ax">Feb</text><rect x="164" y="35.8" width="34" height="89.2" rx="3" fill="var(--slate)"/><text x="181" y="29.8" text-anchor="middle" class="vl">5.095</text><text x="181" y="140" text-anchor="middle" class="ax">Mar</text><rect x="226" y="24.4" width="34" height="100.6" rx="3" fill="var(--slate)"/><text x="243" y="18.4" text-anchor="middle" class="vl">5.750</text><text x="243" y="140" text-anchor="middle" class="ax">Abr</text><line x1="20" y1="98.8" x2="290" y2="98.8" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 4"/></svg><div class="lg"><span><i style="background:var(--slate)"></i>Saldo de tesorería (€)</span><span><i style="background:none;border-top:2px dashed var(--accent);border-radius:0;height:0;vertical-align:3px"></i>Nivel de seguridad: 1.500 €</span></div>
-        <ul class="xl-list"><li><b>Calendario de cobros y pagos</b> según el plazo de cada cliente y proveedor.</li><li><b>Nivel de seguridad:</b> marco el mínimo de caja y calculo el excedente de cada mes.</li><li><b>Decisión:</b> qué hacer con la caja que sobra antes de que se quede parada.</li><li><b>Con ayuda de la IA:</b> repasé con ella los plazos de cobro y pago de cada mes.</li></ul>
-        <div class="chips"><span class="chip">Previsión de caja</span><span class="chip">Plazos de cobro</span></div>
-      </article>
-      <article class="card xl">
-        <div class="xl-top"><span class="xl-ic">⚖️</span><div><h3>Evaluación de inversiones</h3><p class="muted">¿Qué proyecto conviene? Comparo flujos de caja a 5 años.</p></div></div>
-        <svg viewBox="0 0 300 150" class="xch" role="img" aria-label="VAN del proyecto A positivo y del proyecto B negativo">
-<line x1="190" y1="20" x2="190" y2="122" class="axl"/><text x="190" y="138" text-anchor="middle" class="ax">VAN = 0</text>
-<text x="10" y="55" class="ax" style="font-size:12px;font-weight:700">Proyecto A</text><rect x="190" y="40" width="47" height="22" rx="3" fill="var(--slate)"/><text x="243" y="56" class="vl">+2.505 €</text>
-<text x="10" y="101" class="ax" style="font-size:12px;font-weight:700">Proyecto B</text><rect x="90" y="86" width="100" height="22" rx="3" fill="var(--accent)"/><text x="140" y="81" text-anchor="middle" class="vl" style="fill:var(--accent)">−5.329 €</text>
-</svg><div class="lg"><span>TIR del proyecto A: <b>7,9 %</b> frente a un 7 % exigido</span></div>
-        <ul class="xl-list"><li><b>VAN y TIR</b> con las funciones financieras de Excel.</li><li><b>Comparo proyectos</b> con la misma inversión y elijo el que genera valor.</li><li><b>Cálculo inverso:</b> obtengo el desembolso inicial a partir de un VAN dado.</li><li><b>Con ayuda de la IA:</b> comprobé los cálculos y entendí por qué un proyecto crea valor y el otro no.</li></ul>
-        <div class="chips"><span class="chip">VNA</span><span class="chip">TIR</span><span class="chip">Tasa de descuento</span></div>
-      </article>
-      <article class="card xl">
-        <div class="xl-top"><span class="xl-ic">🎓</span><div><h3>Plan de negocio: clases y campus de verano</h3><p class="muted">Proyecto propio, hecho de principio a fin con ayuda de la IA.</p></div></div>
-        <svg viewBox="0 0 300 150" class="xch" role="img" aria-label="Alumnos previstos por mes, con el campus de verano en julio"><line x1="10" y1="122" x2="290" y2="122" class="axl"/><polyline points="20,82 46,74 72,63 98,44 124,44 150,44 176,63 202,44 228,44 254,44 280,44" fill="none" stroke="var(--slate)" stroke-width="2.5"/><circle cx="20" cy="82" r="3.5" fill="var(--slate)"/><text x="20" y="140" text-anchor="middle" class="ax">E</text><circle cx="46" cy="74" r="3.5" fill="var(--slate)"/><text x="46" y="140" text-anchor="middle" class="ax">F</text><circle cx="72" cy="63" r="3.5" fill="var(--slate)"/><text x="72" y="140" text-anchor="middle" class="ax">M</text><circle cx="98" cy="44" r="3.5" fill="var(--slate)"/><text x="98" y="140" text-anchor="middle" class="ax">A</text><circle cx="124" cy="44" r="3.5" fill="var(--slate)"/><text x="124" y="140" text-anchor="middle" class="ax">M</text><circle cx="150" cy="44" r="3.5" fill="var(--slate)"/><text x="150" y="140" text-anchor="middle" class="ax">J</text><circle cx="176" cy="63" r="3.5" fill="var(--accent)"/><text x="176" y="140" text-anchor="middle" class="ax">Jl</text><circle cx="202" cy="44" r="3.5" fill="var(--slate)"/><text x="202" y="140" text-anchor="middle" class="ax">S</text><circle cx="228" cy="44" r="3.5" fill="var(--slate)"/><text x="228" y="140" text-anchor="middle" class="ax">O</text><circle cx="254" cy="44" r="3.5" fill="var(--slate)"/><text x="254" y="140" text-anchor="middle" class="ax">N</text><circle cx="280" cy="44" r="3.5" fill="var(--slate)"/><text x="280" y="140" text-anchor="middle" class="ax">D</text><text x="176" y="81" text-anchor="middle" class="vl" style="fill:var(--accent)">☀️ campus</text></svg><div class="lg"><span><i style="background:var(--slate)"></i>Alumnos por mes · cuota de 45 € (80 € en el campus)</span></div>
-        <ul class="xl-list"><li><b>Previsión mensual</b> de alumnos, cuotas, gastos y tesorería.</li><li><b>Inventario</b> con la inversión inicial en equipos y material.</li><li><b>Revisado con IA:</b> me señaló qué partes estaban escritas a mano y no se actualizaban, y un subtotal que no cuadraba.</li></ul>
-        <div class="chips"><span class="chip">Previsión mensual</span><span class="chip">Plan de tesorería</span></div>
-      </article>
-    </div>
-    <div class="ai-band">
-      <div class="ai-band-t"><span class="eyebrow" style="margin:0">🤖 Cómo me ayuda la IA</span><h3>Yo construyo. La IA revisa. Yo decido.</h3></div>
-      <ol>
-        <li><b>Le paso mis archivos</b> y le pido que revise fórmulas, sumas y enlaces entre hojas.</li>
-        <li><b>Me señala lo que falla:</b> datos escritos a mano que no se actualizan, subtotales que no cuadran o erratas.</li>
-        <li><b>Corrijo y aprendo:</b> entiendo cada error antes de cambiarlo, y así la próxima hoja me sale mejor.</li>
-      </ol>
-    </div>
-  </div>
-</section>
 
 <!-- APRENDIENDO -->
 <section id="aprendiendo">
@@ -728,6 +694,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     catch(e){o.textContent='Selecciónalo y cópialo';}
   });
 })();
+</script>
+<script>
+document.querySelectorAll('#p-excel .xt').forEach(function(b){b.addEventListener('click',function(){
+var k=b.dataset.k;document.querySelectorAll('#p-excel .xt').forEach(function(x){x.classList.toggle('on',x===b);x.setAttribute('aria-pressed',x===b)});
+document.querySelectorAll('#p-excel .xp').forEach(function(p){p.classList.toggle('on',p.dataset.k===k)});
+document.getElementById('xfile').textContent=b.dataset.f;});});
 </script>
 </body>
 </html>
