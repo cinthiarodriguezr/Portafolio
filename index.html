@@ -224,14 +224,14 @@ section{padding:clamp(72px,10vw,112px) 0;border-bottom:1px solid var(--line)}
 
 
 /* EXCEL + IA */
-.project.wide{grid-template-columns:minmax(0,1fr)}.project.wide>*,.xcols>*{min-width:0}
+.project.wide{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr)}.project.wide .body{padding:clamp(22px,2.6vw,34px)}.project.wide h3{font-size:clamp(1.4rem,2.2vw,1.75rem)}.project.wide .steps div{grid-template-columns:84px 1fr;font-size:.92rem}.project.wide>*,.xcols>*{min-width:0}
 .project.wide .visual{order:0!important;flex-direction:column;padding:clamp(16px,3vw,32px);min-height:0}
-.xwin{width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 22px 50px -24px rgba(0,0,0,.4)}
+.xwin{position:relative;width:100%;background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;box-shadow:0 22px 50px -24px rgba(0,0,0,.4)}
 .xbar{display:flex;align-items:center;gap:10px;background:#1D6F42;color:#fff;padding:8px 14px;font-size:.82rem}
 .xlogo{font:700 .8rem var(--body);background:#fff;color:#1D6F42;width:22px;height:22px;border-radius:4px;display:grid;place-items:center}
 .xfile{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .xdots{display:flex;gap:6px}.xdots i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.55)}
-.xbody{background:#fff;height:clamp(240px,34vw,400px);overflow:auto;position:relative}
+.xbody{background:#fff;height:clamp(260px,33vw,440px);overflow:auto;position:relative}
 .xp{display:none;height:100%}.xp.on{display:block}
 .xp a{display:block;cursor:zoom-in}
 .xp img{display:block;width:100%;min-width:620px;height:auto}
@@ -240,13 +240,15 @@ section{padding:clamp(72px,10vw,112px) 0;border-bottom:1px solid var(--line)}
 .xt{flex:none;border:0;border-right:1px solid #DADADA;background:transparent;font:600 .8rem var(--body);color:#444;padding:9px 14px;cursor:pointer;white-space:nowrap}
 .xt.on{background:#fff;color:#1D6F42;box-shadow:inset 0 -3px 0 #1D6F42}
 .xt:focus-visible{outline:2px solid var(--gold);outline-offset:-2px}
+.xdemo{flex:none;font-size:.68rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:#FFF7E0;color:#7A5A12;border:1px solid #E8D29A;padding:4px 10px;border-radius:999px}
+@media (max-width:520px){.xdemo{letter-spacing:0;font-size:.62rem;padding:3px 8px}}
 .xhint{margin:12px 0 0;font-size:.82rem;color:var(--muted)}
-.xcols{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;margin-bottom:1.2rem}
+.xcols{display:grid;grid-template-columns:1fr;gap:16px;margin-bottom:1rem}
 .xcols .steps{margin:0;align-content:start}
-.xworks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.xworks li{background:var(--surface-2);border-radius:12px;padding:10px 14px;font-size:.9rem;color:var(--muted)}
-.xworks b{display:block;color:var(--heading);font-size:.95rem;margin-bottom:2px}
-@media (max-width:860px){.xcols{grid-template-columns:1fr}}
+.xworks{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.xworks li{background:var(--surface-2);border-radius:999px;padding:6px 12px;font-size:.82rem}
+.xworks b{color:var(--heading);font-weight:700}.xworks .d{display:none}
+@media (max-width:980px){.project.wide{grid-template-columns:minmax(0,1fr)}}
 /* LEARNING */
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pillar{border-top:3px solid var(--gold);padding-top:18px}
@@ -515,7 +517,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
     <article class="project wide" id="p-excel">
       <div class="visual">
         <div class="xwin">
-          <div class="xbar"><span class="xlogo">X</span><span class="xfile" id="xfile">Balanza_Verde_Plan_Financiero.xlsx</span><span class="xdots"><i></i><i></i><i></i></span></div>
+          <div class="xbar"><span class="xlogo">X</span><span class="xfile" id="xfile">Balanza_Verde_Plan_Financiero.xlsx</span><span class="xdemo">Ejemplos ficticios</span></div>
           <div class="xbody"><div class="xp on" data-k="tes"><a href="excel-tesoreria-balanza.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-tesoreria-balanza.jpg" alt="Plan de tesorería a 12 meses de la empresa simulada Balanza Verde" loading="lazy"></a></div><div class="xp" data-k="rat"><a href="excel-ratios-balanza.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-ratios-balanza.jpg" alt="Análisis con fondo de maniobra y ratios financieros y de rentabilidad" loading="lazy"></a></div><div class="xp" data-k="pre"><a href="excel-presupuesto.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-presupuesto.jpg" alt="Presupuesto de tesorería de cuatro meses con nivel de seguridad" loading="lazy"></a></div><div class="xp" data-k="van"><a href="excel-van-tir.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-van-tir.jpg" alt="Comparación de dos proyectos de inversión con VAN y TIR" loading="lazy"></a></div><div class="xp" data-k="neg"><a href="excel-plan-negocio.jpg" target="_blank" rel="noopener" title="Abrir la hoja en grande"><img src="excel-plan-negocio.jpg" alt="Plan de tesorería del plan de negocio de clases y campus de verano" loading="lazy"></a></div><div class="xp xp-g" data-k="gas"><span class="tag-demo">Datos de ejemplo</span><div class="gastos" >
           <div class="row1">
             <svg width="76" height="76" viewBox="0 0 76 76"><circle cx="38" cy="38" r="30" fill="none" stroke="var(--surface-2)" stroke-width="9"/><circle cx="38" cy="38" r="30" fill="none" stroke="#2E6B4E" stroke-width="9" stroke-linecap="round" stroke-dasharray="122 189" transform="rotate(-90 38 38)"/><text x="38" y="43" text-anchor="middle" font-family="Playfair Display,serif" font-weight="700" font-size="15" fill="var(--heading)">65%</text></svg>
@@ -531,7 +533,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         </div></div></div>
           <div class="xtabs" role="group" aria-label="Elige una hoja"><button type="button" class="xt on" data-k="tes" data-f="Balanza_Verde_Plan_Financiero.xlsx" aria-pressed="true">Tesorería · Balanza Verde</button><button type="button" class="xt" data-k="rat" data-f="Balanza_Verde_Plan_Financiero.xlsx" aria-pressed="false">Ratios</button><button type="button" class="xt" data-k="pre" data-f="Presupuesto_tesoreria.xls" aria-pressed="false">Presupuesto</button><button type="button" class="xt" data-k="van" data-f="Evaluacion_inversiones.xls" aria-pressed="false">VAN y TIR</button><button type="button" class="xt" data-k="neg" data-f="Plan_de_negocio.xlsx" aria-pressed="false">Plan de negocio</button><button type="button" class="xt" data-k="gas" data-f="Tablero_de_gastos" aria-pressed="false">Control de gastos</button></div>
         </div>
-        <p class="xhint">👆 Cambia de pestaña y toca la hoja para abrirla en grande.</p>
+        <p class="xhint">👆 Cambia de pestaña y toca la hoja para abrirla en grande · Empresas y datos ficticios de mis trabajos de clase.</p>
       </div>
       <div class="body">
         <span class="num">04</span>
@@ -539,19 +541,12 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
         <div class="xcols">
           <div class="steps">
             <div><span class="k">Reto</span><span>Pasar de una pila de cifras a hojas que respondan preguntas: ¿llega el dinero?, ¿qué proyecto conviene?, ¿qué queda por pagar?</span></div>
-            <div><span class="k">Qué hice</span><span>Construí en Excel planes de tesorería, presupuestos, análisis de inversiones y un tablero de gastos, con fórmulas enlazadas. La IA me ayudó a montar la estructura, revisar fórmulas y detectar lo que no cuadraba.</span></div>
+            <div><span class="k">Qué hice</span><span>Cinco trabajos de clase en Excel, con empresas y datos ficticios de ejemplo (los tienes en las pestañas): plan financiero, presupuesto de tesorería, VAN y TIR, plan de negocio y control de gastos. La IA me ayudó a montar la estructura, revisar fórmulas y detectar lo que no cuadraba.</span></div>
             <div><span class="k">Resultado</span><span>Hojas que se actualizan solas y responden de un vistazo: cuánta caja hay cada mes, qué inversión crea valor y qué queda por pagar. Yo construyo, la IA revisa y yo decido.</span></div>
           </div>
-          <ul class="xworks">
-            <li><b>🌱 Plan económico-financiero</b>9 hojas enlazadas, más de 300 fórmulas y ratios automáticos.</li>
-            <li><b>💧 Presupuesto de tesorería</b>Cobros y pagos por plazos, con un nivel de seguridad de caja.</li>
-            <li><b>⚖️ Evaluación de inversiones</b>VAN y TIR para elegir el proyecto que crea valor.</li>
-            <li><b>🎓 Plan de negocio</b>Clases y campus de verano, hecho de principio a fin con IA.</li>
-            <li><b>💶 Control de gastos</b>Previsto, pagado y pendiente, con calendario de vencimientos.</li>
-          </ul>
         </div>
         <div class="chips"><span class="chip">Excel avanzado</span><span class="chip">Fórmulas enlazadas</span><span class="chip">SI.ERROR</span><span class="chip">VNA · TIR</span><span class="chip">Claude</span></div>
-        <p class="proves"><b>Demuestra:</b> planificar, controlar presupuestos y presentar números que se entienden, la base del trabajo administrativo. <span class="muted">Empresas y datos ficticios de mis trabajos de clase.</span></p>
+        <p class="proves"><b>Demuestra:</b> planificar, controlar presupuestos y presentar números que se entienden, la base del trabajo administrativo. </p>
       </div>
     </article>
 
